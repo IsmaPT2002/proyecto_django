@@ -1,11 +1,24 @@
 {% extends 'misitio/base.html' %}
 {% block content %}
-{% for cliente in clientes %}
-  <p>--------------------------------------------------------------------------------------</p>
-<div class="content">
-    <p>  <div class="dni">Dni: {{ cliente.dni }} </div>  Nombre: {{ cliente.nombre }}    Fecha alta: {{ cliente.fechalta}}</p>
-    <p>Dirección: {{ cliente.direccion }}   Móvil: {{ cliente.mobile }}</p>
-</div>
-{% endfor %}
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">DNI</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Fecha Alta</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for cliente in clientes %}
+            <tr>
+                <td>{{ cliente.dni }}</td>
+                <td>{{ cliente.nombre }}</td>
+                <td>{{ cliente.apellidos }}</td>
+                <td>{{ cliente.fecha_alta }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
 
 {% endblock %}
