@@ -5,6 +5,7 @@ from django.urls import path, include
 from misitio import views
 
 urlpatterns = [
-    path ("", views.clientes_list, name="clientes_list"),
-    path ("clientes/new", views.clientes_new, name="clientes_new"),
+    path ("clientes", views.clientes_list, name="clientes_lista"),
+    path ("clientes/altas", views.clientes_altas, name="clientes_altas"),
+    path ("clientes/bajas", views.clientes_bajas, name="clientes_bajas"),
 ]
