@@ -1,49 +1,39 @@
 {% extends 'base.html' %}
 {% block content %}
     <h3><a href="" class="fs-2 fw-bold text-decoration-none">NUEVO SOCIO</a></h3>
-    <form>
-        <div class="row g-1">
-            <div class="col-sm-5">
-                <label></label>
-            </div>
-        </div>
+    <form action="{% url 'clientes_altas' %}" method="post">
         <div class="row g-1">
             <div class="col-sm-2">
-                <label for="exampleInputDNI1" class="form-label">DNI</label>
-                <input type="dni" class="form-control" id="exampleInputDNI1">
+                <label for="dni" class="form-label">DNI</label>
+                <input type="text" class="form-control" id="dni" name="dni">
             </div>
             <div class="col-sm-3">
-                <label for="exampleInputNombre1" class="form-label">Nombre</label>
-                <input type="nombre" class="form-control" id="exampleInputNombre1">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre">
             </div>
         </div>
         <div class="row g-1">
             <div class="col-sm-4">
-                <label for="exampleInputApellidos1" class="form-label">Apellidos</label>
-                <input type="apellidos" class="form-control" id="exampleInputApellidos1">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos">
             </div>
         </div>
         <div class="row g-1">
             <div class="col-sm-5">
-                <label for="exampleInputDireccion1" class="form-label">Dirección</label>
-                <input type="direccion" class="form-control" id="exampleInputDireccion1">
+                <label for="direccion" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="direccion" name="direccion">
             </div>
         </div>
         <div class="row g-1">
             <div class="col-sm-2">
-                <label for="exampleInputMovil1" class="form-label">Móvil</label>
-                <input type="movil" class="form-control" id="exampleInputMovil1">
+                <label for="movil" class="form-label">Móvil</label>
+                <input type="tel" class="form-control" id="movil" name="movil">
             </div>
         </div>
         <div class="row g-1">
             <div class="col-sm-5">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1">
-            </div>
-        </div>
-        <div class="row g-1">
-            <div class="col-sm-5">
-                <label></label>
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email">
             </div>
         </div>
         <div class="row g-1">
@@ -52,9 +42,4 @@
             </div>
         </div>
     </form>
-    <div class="clienteform">
-        <form method="POST"> {% csrf_token %}
-            {{ form.as_p }}
-        </form>
-    </div>
 {% endblock %}
