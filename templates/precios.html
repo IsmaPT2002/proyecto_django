@@ -1,115 +1,158 @@
 {% extends 'base.html' %}
 {% block content %}
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-      <h1 class="display-4 fw-normal">Precios</h1>
-      <p class="fs-5 text-muted">Diferentes opciones de precios según las necesidades del cliente.</p>
+        <h1 class="display-4 fw-normal">Tarifas</h1>
+        <p class="fs-5 text-muted">Diferentes opciones de precios y según las necesidades del cliente.</p>
     </div>
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Free</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
-          </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Descuentos</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">20,16€<small class="text-muted fw-light">/mes</small></h1>
+                    <h5 class="my-0 fw-normal">51,40€<small class="text-muted fw-light">/trimestre</small></h5>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Menores de 18, mayores de 65 años o persona con discapacidad.</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Quiero este</button>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Pro</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-          </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Jovenes</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">25,22€<small class="text-muted fw-light">/mes</small></h1>
+                    <h5 class="my-0 fw-normal">64,59€<small class="text-muted fw-light">/trimestre</small></h5>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Entre 19 y 25 años</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">Quiero este</button>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-          <div class="card-header py-3 text-bg-primary border-primary">
-            <h4 class="my-0 fw-normal">Enterprise</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
-          </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Adultos</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">90,81€<small class="text-muted fw-light">/mes</small></h1>
+                    <h5 class="my-0 fw-normal">35,32€<small class="text-muted fw-light">/trimestre</small></h5>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Entre 26 y 64 años</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">Quiero este</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+        <div class="lst-tabl">
+            <table class="list-tab col-5" width="100%" cellspacing="0" cellpadding="5" border="0">
+                <thead>
+                <tr>
+                    <th>Tipo de servicio</th>
+                    <th>Precio</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Pase diario niño/a de 0 a 2 años, acompañado de adulto</td>
+                    <td>0,00€</td>
+                </tr>
+                <tr>
+                    <td>Pase diario niño/a de 3 a 5 años, acompañado de adulto</td>
+                    <td>2,53€</td>
+                </tr>
+                <tr>
+                    <td>Pase diario a partir de 6 años hasta adultos</td>
+                    <td>5,05€</td>
+                </tr>
+                <tr>
+                    <td>Excedencia por cuota (1 mes)</td>
+                    <td>10,06€</td>
+                </tr>
+                <tr>
+                    <td>Matrícula</td>
+                    <td>10,06€</td>
+                </tr>
 
-    <h2 class="display-6 text-center mb-4">Compare plans</h2>
+                </tbody>
 
-    <div class="table-responsive">
-      <table class="table text-center">
-        <thead>
-          <tr>
-            <th style="width: 34%;"></th>
-            <th style="width: 22%;">Free</th>
-            <th style="width: 22%;">Pro</th>
-            <th style="width: 22%;">Enterprise</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row" class="text-start">Public</th>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Private</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-          </tr>
-        </tbody>
+            </table>
+        </div>
+        <div class="lst-tabl">
+            <table class="list-tab col-6" width="100%" cellspacing="0" cellpadding="5" border="0">
+                <thead>
+                <tr>
+                    <th>Cursos</th>
+                    <th>Abonados</th>
+                    <th>No abonados</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Natación</td>
+                    <td>22,74€</td>
+                    <td>42,96€</td>
+                </tr>
+                <tr>
+                    <td>Escalada</td>
+                    <td>27,79€</td>
+                    <td>48,01€</td>
+                </tr>
+                <tr>
+                    <td>Futbol o baloncesto</td>
+                    <td>22,74€</td>
+                    <td>42,96€</td>
+                </tr>
 
-        <tbody>
-          <tr>
-            <th scope="row" class="text-start">Permissions</th>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Sharing</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Unlimited members</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Extra security</th>
-            <td></td>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-          </tr>
-        </tbody>
-      </table>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="lst-tabl">
+            <table class="list-tab col-5" width="100%" cellspacing="0" cellpadding="5" border="0">
+                <thead>
+                <tr>
+                    <th>Alquiler espacios</th>
+                    <th>Abonados</th>
+                    <th>No abonados</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Rocódromo (1 hora)</td>
+                    <td>25,00€</td>
+                    <td>35,11€</td>
+                </tr>
+                <tr>
+                    <td>Rocódromo (30 min)</td>
+                    <td>17,00€</td>
+                    <td>27,00€</td>
+                </tr>
+                <tr>
+                    <td>Polideportivo (1 hora)</td>
+                    <td>20,21€</td>
+                    <td>30,32€</td>
+                </tr>
+                <tr>
+                    <td>1/2 Polideportivo (1 hora)</td>
+                    <td>10,11€</td>
+                    <td>15,16€</td>
+                </tr>
+                <tr>
+                    <td>Piscina (calle / hora)</td>
+                    <td>12,63€</td>
+                    <td>37,90€</td>
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
 {% endblock %}
