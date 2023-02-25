@@ -1,5 +1,22 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
+    <h2><a href="/clientes" class="fs-1 fw-bold text-decoration-none">COMPLEJO DEPORTIVO VIGO</a></h2>
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="{% static 'collage.jpg' %}" alt="logo" width="500" height="500">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Las mejores instalaciones de la provincia</h1>
+                <p class="lead">El Complejo Deportivo de Vigo es un centro de instalaciones para la práctica deportiva
+                    en la ciudad de Vigo (Pontevedra) España, este complejo cuenta con una pista polideportiva donde se
+                    pueden practicar diferentes deportes, entre los que destacan fútbol, baloncesto; una piscina apta
+                    para competiciones de 25 metros con ocho callesy un rocodromo de casi trescientos metros
+                    cuadrados. </p>
+            </div>
+        </div>
+    </div>
     <div class="">
         <a href="{% url 'clientes_altas' %}" class="text-secondary fs-6 fw-bold text-decoration-none"><span class="">Alta Socio</span></a>
         <label>/</label>
