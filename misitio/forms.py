@@ -1,11 +1,11 @@
 from django import forms
 from .models import Cliente
 
-class AltaSocioForm(forms.Form):
-
-    dni = forms.Field(label='DNI', max_length=8)
-    nombre = forms.Field(label='Nombre', max_length=50)
-    apellido = forms.Field(label='Apellido', max_length=50)
-    direccion = forms.Field(label='Direccion', max_length=50)
-    movil = forms.Field(label='Movil', max_length=50)
-    email = forms.Field(label='Email', max_length=50)
+class ClienteForm(forms.ModelForm):
+    class Meta:
+        model = Cliente
+        fields = ['dni', 'nombre', 'apellidos', 'fecha_alta', 'direccion', 'movil', 'email', 'tarifa']
+class ClienteBajaForm(forms.Form):
+    dni = forms.CharField(max_length=10, required=False)
+    nombre = forms.CharField(max_length=150, required=False)
+    apellidos = forms.CharField(max_length=150, required=False)

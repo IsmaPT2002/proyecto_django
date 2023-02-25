@@ -1,5 +1,5 @@
 from django.db import models
-
+from django import forms
 class Cliente(models.Model):
     dni = models.CharField(max_length=10, primary_key= True)
     nombre = models.CharField(max_length=150, blank= False, null= False)
@@ -10,13 +10,12 @@ class Cliente(models.Model):
     email = models.CharField(max_length=150, blank= False, null= True)
 
     class Tarifas(models.TextChoices):
-        BRONCE = 'BR', 'Bronce'
-        PLATA = 'PL', 'Plata'
-        ORO = 'OR', 'Oro'
-        DIAMANTE = 'DI', 'Diamante'
+        DESCUENTO = 'DES', 'Descuento(<18, >65 o discapacidad)'
+        JOVENES = 'JOV', 'Jovenes(Entre 19 y 25 años)'
+        ADULTOS = 'ADU', 'Adultos(Entre 26 y 64 años)'
 
     tarifa = models.CharField(
-        max_length=2,
+        max_length=3,
         choices=Tarifas.choices,
-        default=Tarifas.BRONCE,
+        default=Tarifas.ADULTOS,
     )
