@@ -1,6 +1,6 @@
 # Complejo Deportivo de Vigo
 
-Bienvenido al proyecto de Django en Python para el complejo deportivo de Vigo. Este sitio web te permitirá conocer nuestras instalaciones, precios y horarios, además de permitirte gestionar tus datos personales, realizar reservas y contactar con nuestro equipo.
+Bienvenido al proyecto de Django en Python para el complejo deportivo de Vigo. Este sitio web te permitirá conocer nuestras instalaciones, precios y horarios, y contactar con nuestro equipo.
 
 ## Requisitos
 
@@ -20,17 +20,13 @@ Para ejecutar este proyecto en tu máquina local, sigue estos sencillos pasos:
 
 ## Características
 
-### Instalaciones
-
-En nuestro complejo deportivo, ofrecemos diversas instalaciones deportivas, como polideportivo, piscinas, hipódromo y más. En la página web, podrás ver la lista completa de nuestras instalaciones y horarios de disponibilidad.
-
-### Clientes/Usuarios
-
-Como cliente o usuario de nuestro complejo deportivo, tendrás la posibilidad de crear una cuenta en la página web, donde podrás gestionar tus datos personales, ver tu historial de reservas y acceder a descuentos y promociones exclusivas.
-
 ### Alta y Baja de Clientes
 
 En nuestra página web, los administradores podrán dar de alta y baja a los clientes, permitiendo un mayor control y seguimiento de nuestra base de datos de clientes.
+
+### Instalaciones
+
+En nuestro complejo deportivo, ofrecemos diversas instalaciones deportivas, como polideportivo, piscinas, hipódromo y más. En la página web, podrás ver la lista completa de nuestras instalaciones y horarios de disponibilidad.
 
 ### Precios
 
