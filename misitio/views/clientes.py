@@ -4,11 +4,12 @@ from misitio.forms import ClienteBajaForm, ClienteForm
 from django.contrib import messages
 
 
+def principal(request):
+    return render(request, 'principal.html')
+
 def clientes_list(request):
     clientes = Cliente.objects.all()
     return render(request, 'clientes_lista.html', {'clientes': clientes})
-
-from django.db.models import Q
 
 def clientes_bajas(request):
     mensaje = None
@@ -30,7 +31,6 @@ def clientes_bajas(request):
         else:
             mensaje = 'Debe ingresar el DNI o apellidos del cliente'
     return render(request, 'clientes_bajas.html', {'mensaje': mensaje})
-
 
 
 def clientes_altas(request):
