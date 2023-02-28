@@ -1,44 +1,39 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <div class="">
-        <a href="{% url 'clientes_altas' %}" class="text-secondary fs-6 fw-bold text-decoration-none"><span class="">Alta Socio</span></a>
-        <label>/</label>
-        <a href="{% url 'clientes_bajas' %}" class="text-secondary fs-6 fw-bold text-decoration-none"><span class="">Baja Socio</span></a>
-    </div>
-    <div class="row g-1">
-        <div class="col-sm-5">
-            <label></label>
-        </div>
-    </div>
-    <div class="table-responsive">
-        <table class="table">
-            <thead>
+    <div class="d-flex justify-content-center mb-2">
+    <a href="{% url 'clientes_altas' %}" class="text-secondary fs-12 fw-bold text-decoration-none me-1"><span class="">Alta Socio</span></a>
+    <label class="text-secondary fs-6 fw-bold">/</label>
+    <a href="{% url 'clientes_bajas' %}" class="text-secondary fs-12 fw-bold text-decoration-none ms-1"><span class="">Baja Socio</span></a>
+</div>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">DNI</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Fecha Alta</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">Móvil</th>
+            <th scope="col">Email</th>
+            <th scope="col">Tarifas</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for cliente in clientes %}
             <tr>
-                <th scope="col">DNI</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Apellidos</th>
-                <th scope="col">Fecha Alta</th>
-                <th scope="col">Dirección</th>
-                <th scope="col">Móvil</th>
-                <th scope="col">Email</th>
-                <th scope="col">Tarifas</th>
+                <td>{{ cliente.dni }}</td>
+                <td>{{ cliente.nombre }}</td>
+                <td>{{ cliente.apellidos }}</td>
+                <td>{{ cliente.fecha_alta }}</td>
+                <td>{{ cliente.direccion }}</td>
+                <td>{{ cliente.movil }}</td>
+                <td>{{ cliente.email }}</td>
+                <td>{{ cliente.get_tarifa_display }}</td>
             </tr>
-            </thead>
-            <tbody>
-            {% for cliente in clientes %}
-                <tr>
-                    <td>{{ cliente.dni }}</td>
-                    <td>{{ cliente.nombre }}</td>
-                    <td>{{ cliente.apellidos }}</td>
-                    <td>{{ cliente.fecha_alta }}</td>
-                    <td>{{ cliente.direccion }}</td>
-                    <td>{{ cliente.movil }}</td>
-                    <td>{{ cliente.email }}</td>
-                    <td>{{ cliente.get_tarifa_display }}</td>
-                </tr>
-            {% endfor %}
-            </tbody>
-        </table>
-    </div>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
 {% endblock %}
